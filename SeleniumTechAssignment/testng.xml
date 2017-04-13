@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="suite1" verbose="5">
+	
+<listeners>
+<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+<listener class-name="Utils.Listener"/>
+</listeners>
+  
+    <test name="test1" preserve-order="true">
+        <classes>
+            <class name="signupautomation.VerifyLinkText" />   
+            <class name="signupautomation.VerifyPage" />
+        </classes>
+    </test>
+</suite>
